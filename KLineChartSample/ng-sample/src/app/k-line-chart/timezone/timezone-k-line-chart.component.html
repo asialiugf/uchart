@@ -1,0 +1,10 @@
+<app-layout title="时区设置">
+  <div id="timezone-k-line" class="k-line-chart"></div>
+  <div class="k-line-chart-menu-container">
+    <button
+      *ngFor="let timezone of timezones"
+      (click)="setTimezone(timezone.key)">
+      {{timezone.text}}
+    </button>
+  </div>
+</app-layout>
